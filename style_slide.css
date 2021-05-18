@@ -1,0 +1,46 @@
+
+.section-padding{
+  padding:0px 0;
+}
+.brand-carousel {
+  background: #eee;
+  margin-top: 1%;
+}
+.owl-dots{
+  text-align: center;
+}
+
+.owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #222222 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  background-color: #FF170F !important;
+}
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
