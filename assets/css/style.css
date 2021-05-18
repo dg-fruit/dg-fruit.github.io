@@ -159,3 +159,19 @@ background-color: #000 !important;
 	width: 100%;
 }
 }
+
+.img-hid{
+	display: none !important;
+}
+
+
+@media (max-width: 767px){
+
+.img-hid{
+	display: flex !important;
+}
+
+.img-show{
+	display: none !important;
+}
+}
