@@ -147,3 +147,15 @@ background-color: #000 !important;
 }
 }
 
+.mobile-show{
+	display: none !important;
+}
+@media (max-width: 767px){
+.mobile-show{
+	display: flex !important;
+	width: 100%;
+}
+.mobile-logo{
+	width: 100%;
+}
+}
