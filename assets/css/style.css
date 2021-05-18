@@ -84,7 +84,7 @@
   text-align: center;
 }
 .col-lg-4:hover{
-	background-color: #c6c6c6;
+	background-color: #c6c6c66e;
 	color: black;
 	border-radius: 25px;
 	transition: 0.2s;
@@ -147,6 +147,3 @@ background-color: #000 !important;
 }
 }
 
-.single-choose:hover{
-	background-color: #c6c6c6 !important;
-} 
