@@ -160,14 +160,14 @@ background-color: #000 !important;
 }
 }
 
-.img-hid{
+.img-hide{
 	display: none !important;
 }
 
 
 @media (max-width: 767px){
 
-.img-hid{
+.img-hide{
 	display: flex !important;
 }
 
