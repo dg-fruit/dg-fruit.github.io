@@ -8,11 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-        <!-- CSS here -->
+		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="./txt-style.css">
             <link rel="stylesheet" href="assets/css/flaticon.css">
             <link rel="stylesheet" href="assets/css/slicknav.css">
             <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -22,13 +23,14 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
-            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
-            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
-            <link rel="stylesheet" href="./style_slide.css">
+            <link rel="stylesheet" href="./style_slider.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+             <link rel='stylesheet' href='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css'><link rel="stylesheet" href="./style_fade.css">
+             <link rel="stylesheet" href="./style_web.css">
+             
    </head>
 
    <body>
-       
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -42,33 +44,40 @@
     </div>
     <!-- Preloader Start -->
 
-    <header>
+    <header style="background-color: red;">
         <!-- Header Start -->
        <div class="header-area header-transparrent ">
-            <div class="main-header header-sticky">
+            <div class="main-header round-header">
                 <div class="container">
                     <div class="row align-items-center">
                         <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2 col-md-1">
+                        <div class="col-xl-2 col-lg-2 col-md-1 hide">
                             <div class="logo">
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="height: 50px;"></a>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-8 col-md-8">
+                        <div class="col-xl-11 col-lg-8 col-md-8">
                             <!-- Main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
                                     <ul id="navigation">    
-                                        <li><a href="index.html"> Home</a></li>
-                                         <li><a href="services.html">Services</a></li>
-                                        <li><a href="about.html" class="active-link">About Us</a></li>
-                                       <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="index.html" class="wat-even active-link">Home</a></li>
+                                        <li><a href="services.html" class="wat-even">Services</a></li>
+
+                                        
+                                         <a href="index.html" class="hid-mob"><img src="assets/img/logo.png" alt="" style="height: 190px;"></a>
+                                         <li><a href="about.html" class="wat-even">About Us</a></li>
+                                        <li><a href="contact.html" class="wat-even">Contact</a></li>
                                        
                                     </ul>
                                 </nav>
                             </div>
                         </div>             
-                        
+                        <!--<div class="col-xl-2 col-lg-2 col-md-3">
+                            <div class="header-right-btn f-right d-none d-lg-block">
+                                <a href="contact.html" class="btn header-btn">Contact Us</a>
+                            </div>
+                        </div>-->
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -79,75 +88,63 @@
        </div>
         <!-- Header End -->
     </header>
+
     <main>
+
         <!-- Slider Area Start-->
-        <div class="services-area">
-            <div class="container">
-
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-tittle text-center mb-80">
-                            <span>About Us</span>
-                            <h2 style="color: #ffaa00">What We Will Do For Your Business​</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-area">
-            <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center">
+        <div class="slider-area" style="background-color: #bc1d42;background-image: url(assets/img/bg.png);">
+            <div class="slider-active" >
+                <div class="single-slider slider-height d-flex align-items-center" >
                     <div class="container">
+                        <!--<div class="col-lg-5 img-hide" style="margin-top: 90px;">
+                                <div id="slidy-container">
+                                  <figure id="slidy">
+                                    <img src="assets/img/hero/about_hero.png" alt="eyes" >
+                                    <img src="assets/img/hero/hero_right.png" alt="lou" >
+                                    <img src="assets/img/hero/about_hero.png" alt="lucie-2" >
+                                    <img src="assets/img/hero/hero_right.png" alt="lucie" >
+                                  </figure>
+                                </div>
+                            </div>-->
+
+
                         <div class="row d-flex align-items-center">
-                            <div class="col-lg-5 d-none d-xl-block">
-                                <div class="hero__img hero__img2 " data-animation="fadeInLeft" data-delay="1s">
-                                    <img src="assets/img/hero/about_hero.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7 col-md-9 ">
-                                <div class="hero__caption hero__caption2">
-                                    <h1 data-animation="fadeInRight" data-delay=".4s">We Collect<br> High Quality Leads</h1>
-                                    <p data-animation="fadeInRight" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
+                            <div class="col-lg-12 col-md-9 ">
+                                <div class="hero__caption">
+                                    <h1  data-animation="fadeInLeft" data-delay=".4s" style="color: white;">
+                                      <span
+                                         class="txt-rotate"
+                                         data-period="2000"
+                                         data-rotate='[ "123Lorem ipsum dolor sit amt.", "456Lorem ipsum dolor sit amet.", "789Lorem ipsum dolor sit amet." ]'></span>
+
+                                    </h1>
+                                    
                                     <!-- Hero-btn -->
-                                    <div class="hero__btn" data-animation="fadeInRight" data-delay=".8s">
-                                        <a href="contact.html" class="btn hero-btn">Contact Us</a>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            
+                            <!--<div class="col-lg-5 img-show">
+                                <div id="slidy-container">
+                                  <figure id="slidy">
+                                    <img src="assets/img/hero/about_hero.png" alt="eyes" >
+                                    <img src="assets/img/hero/hero_right.png" alt="lou" >
+                                    <img src="assets/img/hero/about_hero.png" alt="lucie-2" >
+                                    <img src="assets/img/hero/hero_right.png" alt="lucie" >
+                                  </figure>
+                                </div>
+                            </div>-->
+                            <br>
+                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" style="text-align: center !important;margin: auto;">
+                                        <a href="contact.html" class="btn hero-btn">Get In Touch</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                 
-            </div>
-            <!-- about shape -->
-            
-        </div>
-        <br><br><br>
-        <div class="what-we-do">
-            <div class="container">
-                 <h2 style="text-align: center;"><b>We Are Associated With</b></h2>
-                <div class="brand-carousel owl-carousel">
-                  <div class="single-logo">
-                    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-                  </div>
-                  <div class="single-logo">
-                    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-                  </div>
-                  <div class="single-logo">
-                    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-                  </div>
-                  <div class="single-logo">
-                    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-                  </div>
-                  
-                </div>
+                
             </div>
         </div>
-
-        <br><br><br>
         <!-- Slider Area End-->
+        <!-- What We do start-->
         <div class="what-we-do">
             <div class="container">
                 <div class="row">
@@ -252,81 +249,6 @@
                         </div>
                     </div>
                     
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-do text-center mb-30">
-                            <div class="card">
-                              <div class="card__resting-container">
-                                <img src="assets/img/logo.png">
-                                <div class="card__resting-container__name-wrap do-caption">
-                                  <h4>Service Name</h4>
-                                </div>
-                              </div> <!-- close resting container -->
-                              <div class="card__overlay">
-                                <div class="card__overlay__detail-wrapper">
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Words to Live By</h5>
-                                    <p class="detail-group__text">Tomorrow is today somewhere, maybe.</p>
-                                  </div>
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Areas of Focus</h5>
-                                    <p class="detail-group__text">Good Ideas, Account Management, Book Recommendations</p>
-                                  </div>
-                                  
-                                </div>
-                              </div><!-- close overlay -->
-                            </div>
-                        </div>
-                    </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="single-do text-center mb-30">
-                            <div class="card">
-                              <div class="card__resting-container">
-                                <img src="assets/img/logo.png">
-                                <div class="card__resting-container__name-wrap do-caption">
-                                  <h4>Service Name</h4>
-                                </div>
-                              </div> <!-- close resting container -->
-                              <div class="card__overlay">
-                                <div class="card__overlay__detail-wrapper">
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Words to Live By</h5>
-                                    <p class="detail-group__text">Tomorrow is today somewhere, maybe.</p>
-                                  </div>
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Areas of Focus</h5>
-                                    <p class="detail-group__text">Good Ideas, Account Management, Book Recommendations</p>
-                                  </div>
-                                  
-                                </div>
-                              </div><!-- close overlay -->
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-do text-center mb-30">
-                            <div class="card">
-                              <div class="card__resting-container">
-                                <img src="assets/img/logo.png">
-                                <div class="card__resting-container__name-wrap do-caption">
-                                  <h4>Service Name</h4>
-                                </div>
-                              </div> <!-- close resting container -->
-                              <div class="card__overlay">
-                                <div class="card__overlay__detail-wrapper">
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Words to Live By</h5>
-                                    <p class="detail-group__text">Tomorrow is today somewhere, maybe.</p>
-                                  </div>
-                                  <div class="detail-group">
-                                    <h5 class="detail-group__label">Areas of Focus</h5>
-                                    <p class="detail-group__text">Good Ideas, Account Management, Book Recommendations</p>
-                                  </div>
-                                  
-                                </div>
-                              </div><!-- close overlay -->
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
                 <br>
@@ -336,141 +258,216 @@
                 <br><br>
             </div>
         </div>
-        <!-- What We do start-->
-        <div class="what-we-do we-padding">
+        <!-- What We do End-->
+        <!-- We Create Start -->
+        <br><br><br>
+        
+
+        <div class="we-create-area" data-aos="fade-right">
             <div class="container">
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya to-the-right">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="we-create-area" data-aos="fade-right">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12 img-hide" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 img-show" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="we-create-area" data-aos="fade-right">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya to-the-right">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="we-create-area" data-aos="fade-right">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12 img-hide" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 img-show" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="we-create-area" data-aos="fade-right">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img/service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya to-the-right">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="we-create-area" data-aos="fade-right">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12 img-hide" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img//service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 madhya">
+                        <div class="we-create-cap">
+                            <h3>We Create a Steps to Build a Successful Business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 img-show" style="text-align: center;">
+                        <div class="we-create-img">
+                            <img src="assets/img//service/we-create.png" alt="" style="margin-bottom: 35px;height: 300px;width: 300px;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <!-- We Create End -->
+        <br><br><br>
+        <!-- Generating Start -->
+        <div class="generating-area ">
+            <div class="container">
+                 <!-- Section-tittle -->
+                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-tittle text-center">
-                            <h2>Our Team</h2>
+                            <h2>Generating New Customers Via Online Mode​​</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row123">
-                      <div class="column123">
-                        <div class="card123 container456" >
-                          <img src="assets/img/team/1.png" alt="Jane" style="width:100%" class="image456">
-                          <div class="overlay456">
-                            <div class="text456">
-                                
-                                <p style="color: white !important;">Description</p>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-generating mb-30">
+                            
+                            <div class="">
+                                <div class="generating-icon">
+                                <span class="flaticon-chart"></span>
                             </div>
-                          </div>
-                          
-                        </div>
-                        <p style="text-align: center;"><b>Name</b><br>Designation</p>
-                      </div>
-
-                      <div class="column123">
-                        <div class="card123 container456" >
-                          <img src="assets/img/team/2.png" alt="Jane" style="width:100%" class="image456">
-                          <div class="overlay456">
-                            <div class="text456">
+                                <h5>All Sizes Business</h5>
                                 
-                                <p style="color: white !important;">Description</p>
                             </div>
-                          </div>
-                          
                         </div>
-                        <p style="text-align: center;"><b>Name</b><br>Designation</p>
-                      </div>
-
-                      <div class="column123">
-                        <div class="card123 container456" >
-                          <img src="assets/img/team/3.png" alt="Jane" style="width:100%" class="image456">
-                          <div class="overlay456">
-                            <div class="text456">
+                    </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-generating mb-30">
+                            
+                            <div class="">
+                                <div class="generating-icon">
+                                <span class="flaticon-social-media-marketing"></span>
+                            </div>
+                                <h5>Awesome Results</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-generating mb-30">
+                            
+                            <div class="">
+                                <div class="generating-icon">
+                                <span class="flaticon-speaker"></span>
+                            </div>
+                                <h5>Keep you in the Loop</h5>
                                 
-                                <p style="color: white !important;">Description</p>
                             </div>
-                          </div>
-                          
                         </div>
-                        <p style="text-align: center;"><b>Name</b><br>Designation</p>
-                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-generating mb-30">
+                            
+                            <div class="">
+                                <div class="generating-icon">
+                                <span class="flaticon-growth"></span>
+                            </div>
+                                <h5>Significant ROI</h5>
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br><br><br>
-        <div class="what-we-do">
-            <div class="container">
-                 <h2 style="text-align: center;"><b>Our Gallery</b></h2>
-                <div class="brand-carousel owl-carousel">
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g8.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g8.jpg);"></div>
-                    </a>
-                  </div>
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g3.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g3.jpg);"></div>
-                    </a>
-                  </div>
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g2.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g2.jpg);"></div>
-                        </a>
-                  </div>
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g1.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g1.jpg);"></div>
-                    </a>
-                  </div>
-
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g6.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g6.jpg);"></div>
-                        </a>
-                  </div>
-
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g7.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g7.jpg);"></div>
-                        </a>
-                  </div>
-
-                  <div class="single-logo">
-                    <a href="assets/img/elements/g1.jpg" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/elements/g1.jpg);"></div>
-                    </a>
-                  </div>
-                  
-                </div>
-            </div>
-        </div>
-        <br>
-        <p style="text-align: center;">If you think you are crazy enough to join our team. Email us : <a href="mailto:careers@digitalfruition.in" style="color: red">careers@digitalfruition.in</a></p>
-        <!-- What We do End-->
+        <!-- Generating End -->
         <br><br>
-                 <!-- have-project Start-->
-         <div class="have-project">
-            <div class="container">
-                <div class="haveAproject" style="background-image: -webkit-linear-gradient( 0deg , #00275E 0%, #000000 100%);">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-7 col-lg-9 col-md-12">
-                            <div class="wantToWork-caption">
-                                <h2>Have project in mind?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-3 col-md-12">
-                           <div class="wantToWork-btn f-right">
-                                <a href="#" class="btn btn-ans">Contact Us</a>
-                           </div>
-                        </div>
-                    </div>
+         <!-- have-project Start-->
+          <div class="hero__btn" data-animation="fadeInRight" data-delay=".8s" style="text-align: center;">
+                    <a href="contact.html" class="btn hero-btn">Get In Touch</a>
                 </div>
-                
-            </div>
-        </div>
         <!-- have-project End -->
 
     </main>
     <br><br>
-  <footer>
+   <footer>
 
        <!-- Footer Start-->
       <div class="footer-main" style="background-image: url(assets/img/map.png);">
@@ -535,18 +532,18 @@
 
    </footer>
    
+   
 	<!-- JS here -->
 	
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		
 		<!-- Jquery, Popper, Bootstrap -->
 		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="./assets/js/popper.min.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
 	    <!-- Jquery Mobile Menu -->
         <script src="./assets/js/jquery.slicknav.min.js"></script>
-
+         <script  src="./txt-script.js"></script>
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
         <script src="./assets/js/owl.carousel.min.js"></script>
         <script src="./assets/js/slick.min.js"></script>
@@ -572,9 +569,9 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-        <script  src="./script_slide.js"></script>
+         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script_slider.js"></script> 
+         <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'></script><script  src="./script_fade.js"></script>
+         <script  src="./script_web.js"></script>
 
     </body>
 </html>
