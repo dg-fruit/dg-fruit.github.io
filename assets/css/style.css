@@ -189,3 +189,12 @@ background-color: #000 !important;
 	text-align: center !important;
 }
 }
+.to-the-right{
+	text-align: right;
+}
+
+.wat-even{
+	font-size: 20px !important;
+	padding-left: 28px !important;
+	padding-right: 28px !important;
+}
