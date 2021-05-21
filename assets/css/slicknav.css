@@ -90,7 +90,7 @@
     }
 
 .slicknav_nav {
-  color: #fff;
+  color: #464646;
   margin: 0;
   padding: 0;
   font-size: 0.875em;
@@ -198,7 +198,7 @@
     background: #fff !important;
 }
 .slicknav_nav {
-	background: #fff;
+	background: #464646;
 	float: right;
 	margin-top: 11px;
 	padding: 19px;
