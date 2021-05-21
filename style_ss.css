@@ -1,34 +1,21 @@
-.carousel-wrap {
-  margin: 90px auto;
-  padding: 0 5%;
-  width: 96%;
-  position: relative;
+/* Equal Heights for OwlCarousel 2 */
+.owl-carousel .owl-stage {
+  display: flex;
 }
-
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-  position: relative;
-  z-index: 100; 
-  -webkit-backface-visibility: hidden; 
+.owl-carousel .owl-item {
+  display: flex;
+  flex: 1 0 auto;
 }
-
-/* end fix */
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
+.owl-carousel .thumbnail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
 }
-
-.owl-nav i {
-  font-size: 52px;
+.owl-carousel .thumbnail .caption {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
 }
-
-.owl-nav .owl-prev {
-  display: none;
+.owl-carousel .thumbnail .caption .flex-text {
+  flex-grow: 1;
 }
-
-.owl-nav .owl-next {
-  display: none;
-}
-

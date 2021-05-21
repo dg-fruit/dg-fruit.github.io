@@ -28,12 +28,12 @@ font-family: Flaticon;
 
 }
 
-.flaticon-chart:before { content: "\f100"; }
-.flaticon-speaker:before { content: "\f101"; }
-.flaticon-growth:before { content: "\f102"; }
-.flaticon-social-media-marketing:before { content: "\f103"; }
-.flaticon-tasks:before { content: "\f104"; }
-.flaticon-project:before { content: "\f105"; }
-.flaticon-award:before { content: "\f106"; }
-.flaticon-quote:before { content: "\f107"; }
-.flaticon-quote-1:before { content: "\f108"; }
+.flaticon-chart:before { content: "\f100";font-size: 130px; }
+.flaticon-speaker:before { content: "\f101";font-size: 130px; }
+.flaticon-growth:before { content: "\f102";font-size: 130px; }
+.flaticon-social-media-marketing:before { content: "\f103";font-size: 130px; }
+.flaticon-tasks:before { content: "\f104";font-size: 130px; }
+.flaticon-project:before { content: "\f105";font-size: 130px; }
+.flaticon-award:before { content: "\f106";font-size: 130px; }
+.flaticon-quote:before { content: "\f107";font-size: 130px; }
+.flaticon-quote-1:before { content: "\f108";font-size: 130px; }
