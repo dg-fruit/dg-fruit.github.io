@@ -391,3 +391,9 @@ iframe{
 .tempHeadContBdr{
 	background-color: red !important;
 }
+@media (min-width: 767px){
+	.slicknav_nav a{
+		color: white !important;
+	}
+
+}
