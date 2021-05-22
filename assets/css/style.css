@@ -223,9 +223,10 @@ background-color: #000 !important;
   overflow: hidden;
   display: flex;
   line-height: 1.5;
-      background: linear-gradient(
+     /* background: linear-gradient(
 135deg
-, #ff0019 0%, #6a007a 100%);
+, #ff0019 0%, #6a007a 100%);*/
+background: white;
 }
 .card h4{
 	color: white !important;
@@ -251,7 +252,9 @@ background-color: #000 !important;
   transition: all 0.4s ease 0s;
 }
 .card__overlay {
-  background: #fff;
+  background: linear-gradient(
+135deg
+, #ff0019 0%, #6a007a 100%);
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -287,7 +290,7 @@ background-color: #000 !important;
 .card__overlay .contact-link {
   position: relative;
   text-decoration: none;
-  color: #1a1a1a;
+  color: white;
   margin-top: 0.25rem;
   font-size: 1.125rem;
 }
@@ -302,6 +305,15 @@ background-color: #000 !important;
   transition: width 0.33s;
   z-index: 3;
 }
+
+.card__overlay h5 {
+	color: white !important;
+}
+
+.card__overlay p {
+	color: white !important;
+}
+
 .card:hover .card__resting-container {
   transition: all 0.4s ease 0s;
 }
