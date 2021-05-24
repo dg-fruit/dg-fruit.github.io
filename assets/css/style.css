@@ -426,7 +426,7 @@ iframe{
 @media (min-width: 767px){
             
   .hero__caption h1{
-      font-size: 73px !important;
+      font-size: 53px !important;
   }
 }
 
@@ -505,6 +505,13 @@ iframe{
 {
 	background-color: #0077b5 !important;
 	color: white !important;
+}
+
+
+@media (min-width: 767px){
+.aboutarea{
+	margin-top: -70px !important;
+}
 }
 
 
