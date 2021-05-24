@@ -409,6 +409,8 @@ iframe{
 	}
 
 }
+
+@media (min-width: 767px){
 .udhar2 h3{
 	padding-left: 25px;
 	margin-right: -25px;
@@ -417,4 +419,19 @@ iframe{
 .udhar2 p{
 	padding-left: 50px;
 	margin-right: -50px;
+}
+
+}
+
+@media (min-width: 767px){
+            
+  .hero__caption h1{
+      font-size: 100px !important;
+  }
+}
+
+@media (max-width: 767px){
+.hero__caption h1{
+      font-size: 55px !important;
+  }
 }
