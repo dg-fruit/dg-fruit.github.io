@@ -342,7 +342,7 @@ background: white;
     margin-top: 120px;
   }
   .form-con{
-  	width: 30%;
+  	width: 36%;
   }
 }
 .hero__caption{
@@ -442,6 +442,10 @@ iframe{
 
 @media (max-width: 767px){
 
+.detail-group__text{
+	font-size: 13px !important;
+}
+
 .big-small{
 	padding-top: 80px;
 	font-size: 40px !important;
@@ -476,6 +480,31 @@ iframe{
 	text-align: center !important;
 }
 
+}
+
+
+.insta
+{
+	background-color: #bc2a8d !important;
+	color: white !important;
+}
+
+.fb
+{
+	background-color: #4267B2 !important;
+	color: white !important;
+}
+
+.tw
+{
+	background-color: #1DA1F2 !important;
+	color: white !important;
+}
+
+.in
+{
+	background-color: #0077b5 !important;
+	color: white !important;
 }
 
 
