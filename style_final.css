@@ -1,0 +1,150 @@
+
+:root {
+  --up: 3;
+  --card-margin: 12px;
+  --card-shadow: rgba(46, 49, 52, .4);
+  --color-white: #fff;
+  --color-lightgrey: #ccc;
+  --color-ui: #999;
+  --color-ui-hover: #666;
+  --cardWidth: calc(96vw/var(--up));
+  --carouselWidth: calc(var(--cardWidth) * var(--num));
+  --carouselLeftMargin: calc(2vw - var(--cardWidth));
+}
+@media screen and (max-width: 900px) {
+  :root {
+    --up: 1;
+  }
+}
+
+.carouselwrapper {
+  overflow: hidden;
+  
+  position: relative;
+}
+
+.carousel {
+  width: var(--carouselWidth);
+  margin: 0 0 0 var(--carouselLeftMargin);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.carousel.prev {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+          animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  -webkit-animation-name: prev;
+          animation-name: prev;
+}
+.carousel.next {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+          animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  -webkit-animation-name: next;
+          animation-name: next;
+}
+.carousel li {
+  
+  text-align: center;
+  width: calc(var(--cardWidth) - var(--card-margin) * 2);
+  box-sizing: border-box;
+}
+
+.ui {
+  position: absolute;
+  top: 91%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  margin: auto !important;
+  justify-content: space-between;
+  
+  z-index: 1;
+}
+
+@media (max-width: 767px){
+  .ui{
+    padding: 135px !important;
+  }
+
+  }
+
+@media (min-width: 767px){
+  .ui{
+    padding: 620px !important;
+  }
+
+  }
+.ui button {
+  text-align: center !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d92369 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border: 0;
+  transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.ui button:hover {
+  background: var(--color-ui-hover);
+}
+.ui button:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+.card {
+    
+  border-radius: 30px;
+  
+  
+}
+.card .material-icons {
+  
+}
+.card p {
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px + var(--cardWidth)));
+  }
+}
+
+@keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px + var(--cardWidth)));
+  }
+}
+@-webkit-keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px - var(--cardWidth)));
+  }
+}
+@keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px - var(--cardWidth)));
+  }
+}
