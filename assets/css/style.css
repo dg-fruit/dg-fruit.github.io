@@ -517,6 +517,16 @@ iframe{
 	border: 1px solid #cacaca;
 }
 
+.ytv{
+	width: 50%;
+}
+@media (max-width: 767px){
+.ytv{
+	width: 100%;
+}
+
+}
+
 
 
 
