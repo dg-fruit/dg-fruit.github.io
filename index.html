@@ -50,6 +50,8 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
             <link rel="stylesheet" href="./style_final.css">
+              <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style_par.css">
+
 
              
    </head>
@@ -119,9 +121,13 @@
     <main>
 
         <!-- Slider Area Start-->
-        <div class="slider-area" style="background-color: #bc1d42;background-image: url(assets/img/bg.png);background-repeat: no-repeat;">
-            <div class="slider-active" >
+
+        <div class="slider-area" style="background-image: url(assets/img/bg.png);background-repeat: no-repeat;">
+
+            <div class="slider-active">
+
                 <div class="single-slider slider-height d-flex align-items-center" >
+                  <web-particles id="tsparticles" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":true,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'></web-particles>
                     <div class="container">
                         <!--<div class="col-lg-5 img-hide" style="margin-top: 90px;">
                                 <div id="slidy-container">
@@ -556,7 +562,7 @@
         <br><br>
          <!-- have-project Start-->
           <div class="hero__btn" data-animation="fadeInRight" data-delay=".8s" style="text-align: center;margin-bottom: -100px;">
-                    <a href="contact.html" class="btn hero-btn" style="background: linear-gradient( 135deg , #e00016 0%, #6a007a 100%);">Get In Touch</a>
+                    <a href="contact.html" class="btn hero-btn" style="background: linear-gradient( 135deg , #e00016 0%, #6a007a 100%);padding-top: 13px !important;padding-bottom: 13px !important;color: white;">Get In Touch</a>
                 </div>
         <!-- have-project End -->
 
@@ -672,6 +678,16 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
 <script  src="./script_ss.js"></script>
 <script  src="./script_final.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
+<!-- https://github.com/matteobruni/tsparticles -->
+
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+<!-- partial -->
          
 <!--Start of Tawk.to Script-->
      

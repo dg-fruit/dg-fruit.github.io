@@ -104,9 +104,13 @@
 
 .card {
     
-  border-radius: 30px;
+  border-radius: 30px !important;
+  border: 1px solid white !important;
   
   
+}
+.we-need{
+  border: 1px solid #cecece !important;
 }
 .card .material-icons {
   
